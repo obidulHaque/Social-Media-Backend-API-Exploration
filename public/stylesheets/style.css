@@ -1,0 +1,19 @@
+body {
+  padding: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+h1{
+  color: brown;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.container{
+  height: 150px;
+  width: 50%;
+  background: #e79c9c;
+  
+}

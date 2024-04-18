@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><title ></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Qura</h1>
+    <% for(post of posts){%>
+      <div class="container">
+        <h4>id: <%= post.id %></h4>
+        <h2>@ <%= post.username %></h2>
+        <h3> <%= post.contain %></h3>
+        <a href="http://localhost:3000/post/<%=post.id%>"> See Details</a>
+        
+        <a href="http://localhost:3000/post/<%=post.id%>/edit">Edit</a>
+        <form method="post"action="/post/<%=post.id%>?_method=DELETE"> <button>Delete</button> </form>
+      </div>
+    <%}%>
+    <a href="http://localhost:3000/post/user"> Post a Status</a>
+  </body>
+</html>
